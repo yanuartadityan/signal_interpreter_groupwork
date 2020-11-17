@@ -12,4 +12,14 @@ Personally, as long as you know what package to use, it's good to put it in *req
 
 Note: This repository has *.gitignore* which contains both *Pipfile* and *Pipfile.lock*, that means when you clone it out, you won't see any Pipfile. You must run pipenv command in the previous paragraph to do so.
 
-# 2: TBD
+# 2: Unittest, Mocking and Patching
+
+To run:
+
+1. Run `git clone https://github.com/yanuartadityan/signal_interpreter_groupwork.git --recursive`. Codes for each *server* and *client* are in two different repositories, and linked through Git submodules. Therefore `--recursive` will also clone both server and client submodules with main repository.
+2. After a while using *pipenv*, I feel like using *venv* is easier. From terminal, go to the root directory of the directory and create *venv*'s environment by running `python3 -m venv .venv/`. This will save the virtual environment named `venv` locally.
+3. Activate the virtual environment by running `.venv/bin/activate` or if Git-Bash is used, `source .venv/bin/activate`. To deactivate just run `deactivate`.
+4. Install all the dependancies, `python3 -m pip install -r requirements.txt`.
+5. Run all tests `pytest -v`.
+
+# 3: TBD
