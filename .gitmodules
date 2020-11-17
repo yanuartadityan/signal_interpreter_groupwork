@@ -1,0 +1,6 @@
+[submodule "signal_interpreter_server"]
+	path = signal_interpreter_server
+	url = https://github.com/yanuartadityan/signal_interpreter_server.git
+[submodule "signal_interpreter_client"]
+	path = signal_interpreter_client
+	url = https://github.com/yanuartadityan/signal_interpreter_client.git
