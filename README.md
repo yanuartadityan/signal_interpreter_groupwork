@@ -22,4 +22,13 @@ To run:
 4. Install all the dependancies, `python3 -m pip install -r requirements.txt`.
 5. Run all tests `pytest -v`.
 
+Next to run with coverage:
+1. Install `pytest-cov` package (already added in the requirements.txt).
+2. Now pytest will support `--cov` arguments. To run with coverage, run `<signal_interpreter_groupwork>$ pytest --verbose --cov-config=.coveragerc --cov .`
+
+Some notes on the Git stuffs:
+1. When adding another repository as modules, they are automatically detached from their HEAD:master branch. This allows us to focus on our own development repo as usually we don't contribute much on the submodules.
+2. For this project, instead, collaborators are actively working with the submodules (*signal_interpreter_server* and *signal_interpreter_client*). Then, for collaborators to start working, first is you must create a branch in each submodule directory, e.g., `git branch exercise_3` then followed by `git checkout exercise_3`. 
+3. When the work is done, stage and commit, then merge the changes in *exercise_3* to the main branch. To merge, perform `git checkout main`, followed by `git merge exercise_3`. Then you can push to the Github repository.
+
 # 3: TBD
