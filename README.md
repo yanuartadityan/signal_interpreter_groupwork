@@ -20,7 +20,8 @@ To run:
 2. After a while using *pipenv*, I feel like using *venv* is easier. From terminal, go to the root directory of the directory and create *venv*'s environment by running `python3 -m venv .venv/`. This will save the virtual environment named `venv` locally.
 3. Activate the virtual environment by running `.venv/bin/activate` or if Git-Bash is used, `source .venv/bin/activate`. To deactivate just run `deactivate`.
 4. Install all the dependancies, `python3 -m pip install -r requirements.txt`.
-5. Run all tests `pytest -v`.
+5. Add the current project directory to PYTHONPATH environment variable. This can done by `export PYTHONPATH=$(pwd)`
+6. Run all tests `pytest -v`.
 
 Next to run with coverage:
 1. Install `pytest-cov` package (already added in the requirements.txt).
