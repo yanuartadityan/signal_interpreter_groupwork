@@ -20,7 +20,7 @@ To run:
 2. After a while using *pipenv*, I feel like using *venv* is easier. From terminal, go to the root directory of the directory and create *venv*'s environment by running `python3 -m venv .venv/`. This will save the virtual environment named `venv` locally.
 3. Activate the virtual environment by running `.venv/bin/activate` or if Git-Bash is used, `source .venv/bin/activate`. To deactivate just run `deactivate`.
 4. Install all the dependancies, `python3 -m pip install -r requirements.txt`.
-5. Add the current project directory to PYTHONPATH environment variable. This can done by `export PYTHONPATH=$(pwd)`
+5. Add the current project directory to PYTHONPATH environment variable. This can done by `export PYTHONPATH=$PYTHONPATH:$(pwd)`
 6. Run all tests `pytest -v`.
 
 Next to run with coverage:
@@ -32,4 +32,11 @@ Some notes on the Git stuffs:
 2. For this project, instead, collaborators are actively working with the submodules (*signal_interpreter_server* and *signal_interpreter_client*). Then, for collaborators to start working, first is you must create a branch in each submodule directory, e.g., `git branch exercise_3` then followed by `git checkout exercise_3`. 
 3. When the work is done, stage and commit, then merge the changes in *exercise_3* to the main branch. To merge, perform `git checkout main`, followed by `git merge exercise_3`. Then you can push to the Github repository.
 
-# 3: TBD
+# 3: Even More on Unittest, Pylint & Pycodestyle, Parametrizing Unittest
+
+To run:
+
+1. If you already have the repository, perform clean submodule updates `git pull` followed by `git submodule update --init --recursive`. 
+2. Install even more modules in *pip* by calling `python -m pip install -r requirements.txt`.
+3. Run pycodestyle by invoking `invoke style`, run pylint by invoking `invoke lint` and run unit test by invoking `invoke unit-test`.
+
