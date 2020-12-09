@@ -9,7 +9,7 @@ def style(_):
     """
     pycodestyle check
     """
-    cmd = f"pycodestyle signal_interpreter_client/ signal_interpreter_server/"
+    cmd = f"pycodestyle signal_interpreter_client/ signal_interpreter_server/ --max-line-length=120"
     subprocess.call(cmd, shell=True)
 
 @task
