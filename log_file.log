@@ -1,0 +1,2 @@
+2020-12-14:21:51:49,445 ERROR    [exercise_w4_3.py:19] Error occurred invalid literal for int() with base 10: '10sdf'
+2020-12-14:21:52:38.885 ERROR    [exercise_w4_3.py:19] Error occurred invalid literal for int() with base 10: '2f'
