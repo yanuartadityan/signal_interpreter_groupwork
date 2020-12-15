@@ -40,3 +40,10 @@ To run:
 2. Install even more modules in *pip* by calling `python -m pip install -r requirements.txt`.
 3. Run pycodestyle by invoking `invoke style`, run pylint by invoking `invoke lint` and run unit test by invoking `invoke unit-test`.
 
+# 4: Integration Testing, Exceptions and Logging
+
+Some findings during working late for week 4 assignments:
+* This is probably one of the most usable features, Exceptions and Logging. 
+* Tried to solution with different platforms (MacOS, Linux and Windows), and found out that $PYTHONPATH environment variable works differently somehow. In Linux and Windows, whenever I started `$ python [params]`, PYTHONPATH should add what `$ pwd` will show, but in Linux and Windows somehow I had to add the *signal_interpreter_workgroup* path manually to the PYTHONPATH by running `$ export $PYTHONPATH=<path to the project>: $PYTHONPATH`. 
+* Still not getting how to mock server. I have to run the server in the background to get 100% result when running `invoke unit-test`
+
