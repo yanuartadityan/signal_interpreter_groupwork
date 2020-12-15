@@ -1,0 +1,32 @@
+version: 1
+
+formatters:
+  simple:
+    format: "%(asctime)s.%(msecs)d %(levelname)-8s [%(filename)s:%(lineno)d] %(message)s"
+
+handlers:
+  console:
+    class: logging.StreamHandler
+    level: INFO
+    formatter: simple
+    stream: ext://sys.stdout
+
+  debug:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: simple
+    maxBytes: 10485760
+    backupCount: 20
+    filename: LOG_INFO_YAML.log
+
+  error:
+    class: logging.handlers.RotatingFileHandler
+    level: WARNING
+    formatter: simple
+    maxBytes: 10485760
+    backupCount: 20
+    filename: LOG_ERROR_YAML.log
+
+root:
+  level: NOTSET
+  handlers: [console, debug, error]

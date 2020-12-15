@@ -1,0 +1,29 @@
+2020-12-15 22:57:29,134.134 ERROR    [routes.py:36] Received key input error 'signal'
+Traceback (most recent call last):
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/signal_interpreter_server/src_server/routes.py", line 30, in interpret_signal
+    signal_name = signal_ps.get_signal_by_id(data["signal"])
+KeyError: 'signal'
+2020-12-15 22:57:29,134.134 ERROR    [app.py:1891] Exception on / [POST]
+Traceback (most recent call last):
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/signal_interpreter_server/src_server/routes.py", line 30, in interpret_signal
+    signal_name = signal_ps.get_signal_by_id(data["signal"])
+KeyError: 'signal'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/.venv/lib/python3.9/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/.venv/lib/python3.9/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/.venv/lib/python3.9/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/.venv/lib/python3.9/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/.venv/lib/python3.9/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/.venv/lib/python3.9/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/mirkwood/Workspace/git/signal_interpreter_groupwork/signal_interpreter_server/src_server/routes.py", line 37, in interpret_signal
+    abort(400, description=f"{data['signal']} did not return correct values. Key error!")
+KeyError: 'signal'

@@ -25,6 +25,13 @@ def unit_test(_):
     """
     unit-test check
     """
-    cmd = f"pytest . --cov . --cov-config=.coveragerc --verbose"
+    cmd = f"pytest signal_interpreter_server/tests/unit --cov signal_interpreter_server/ --cov-config=.coveragerc --verbose"
     subprocess.call(cmd, shell=True)
 
+@task
+def integration_test(_):
+    """
+    integration-test check
+    """
+    cmd = f"pytest signal_interpreter_server/tests/integration  --verbose"
+    subprocess.call(cmd, shell=True)
