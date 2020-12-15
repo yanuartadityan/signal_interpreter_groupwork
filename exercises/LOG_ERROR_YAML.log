@@ -1,0 +1,3 @@
+2020-12-15 21:18:27,329.329 ERROR    [exercise_w4_6.py:19] Error occurred invalid literal for int() with base 10: '22f'
+2020-12-15 21:18:29,160.160 ERROR    [exercise_w4_6.py:19] Error occurred invalid literal for int() with base 10: '39f'
+2020-12-15 21:18:31,274.274 ERROR    [exercise_w4_6.py:19] Error occurred invalid literal for int() with base 10: 'f3'

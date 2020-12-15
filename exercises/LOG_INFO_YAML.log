@@ -1,0 +1,15 @@
+2020-12-15 21:18:20,872.872 INFO     [exercise_w4_6.py:16] User entered age: 25
+2020-12-15 21:18:20,872.872 INFO     [exercise_w4_6.py:23] User is old enough to drive
+2020-12-15 21:18:20,872.872 INFO     [exercise_w4_6.py:29] Bus validator is finished
+2020-12-15 21:18:22,528.528 INFO     [exercise_w4_6.py:16] User entered age: 30
+2020-12-15 21:18:22,528.528 INFO     [exercise_w4_6.py:23] User is old enough to drive
+2020-12-15 21:18:22,528.528 INFO     [exercise_w4_6.py:29] Bus validator is finished
+2020-12-15 21:18:25,272.272 INFO     [exercise_w4_6.py:16] User entered age: 19
+2020-12-15 21:18:25,272.272 INFO     [exercise_w4_6.py:26] User is not old enough to drive
+2020-12-15 21:18:25,272.272 INFO     [exercise_w4_6.py:29] Bus validator is finished
+2020-12-15 21:18:27,329.329 ERROR    [exercise_w4_6.py:19] Error occurred invalid literal for int() with base 10: '22f'
+2020-12-15 21:18:27,329.329 INFO     [exercise_w4_6.py:29] Bus validator is finished
+2020-12-15 21:18:29,160.160 ERROR    [exercise_w4_6.py:19] Error occurred invalid literal for int() with base 10: '39f'
+2020-12-15 21:18:29,161.161 INFO     [exercise_w4_6.py:29] Bus validator is finished
+2020-12-15 21:18:31,274.274 ERROR    [exercise_w4_6.py:19] Error occurred invalid literal for int() with base 10: 'f3'
+2020-12-15 21:18:31,274.274 INFO     [exercise_w4_6.py:29] Bus validator is finished
